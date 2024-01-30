@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //LKPD 4
+        //nomor 1
+        let Math = 82;
+        let PABP = 70;
+        let DPK = 77;
+        let mean = (Math + PABP + DPK)/3;
+    
+        if(mean >= 80 && mean <= 100) {
+            grade= "A";
+        } else if (mean >= 75 && mean <80){
+            grade = "B";
+        } else if (mean >= 65 && mean <75){
+            grade = "C";
+        } else if (mean >= 45 && mean <65){
+            grade = "D";
+        } else if (mean >= 0 && mean <45){
+            grade = "E";
+        } else {
+            grade = "K";
+        }
+
+        console.log('rata-rata iqbal adalah:', mean)
+        console.log('jadi nilai iqbal adalah:', grade)
+
+
+        //2.   
+        let gologan, tanggal, bulan, tahun, kodeiden
+
+        gologan = 2
+        tanggal = 25
+        bulan = 'Mei'
+        tahun = 1978
+        kodeiden = 3
+
+        console.log(gologan,tanggal,bulan,tahun,kodeiden)
+
+        //3
+        function menghitung (dataJam, dataMenit, dataDetik) {
+
+            let totalDetik = dataJam * 3600 + dataMenit * 60 + dataDetik;
+            let hasilTotalDetik = totalDetik + 1;
+            let totalJam = (Math.floor(hasilTotalDetik / 3600) %24);
+            let sisaDetik = hasilTotalDetik % 3600;
+            let totalMenit = Math.floor(sisaDetik / 60);
+            let second = sisaDetik % 60;
+
+            console.log(`${dataJam} jam ${dataMenit} Menit ${dataDetik} detik`);
+            console.log(`${totalJam} jam ${totalMenit} Menit ${totalDetik} detik`);
+        }
+
+        menghitung(2, 25, 11);
+    </script>
+</body>
+</html>

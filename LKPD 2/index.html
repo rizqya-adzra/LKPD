@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //LKPD 2
+        //1. gaji karyawan
+        let namaKaryawan, gajiPokok, tunjangan, pajak, gajiBersih
+
+        namaKaryawan = 'Rizqya'
+        gajiPokok = 50000
+
+        tunjangan = 0.20 * gajiPokok
+        pajak = 0.15 * (gajiPokok + tunjangan)
+        gajiBersih = gajiPokok + tunjangan + pajak
+        console.log('Nama anda', namaKaryawan)
+        console.log('Tunjangan anda', tunjangan)
+        console.log('Pajak anda', pajak)
+        console.log('Gaji pokok anda', gajiPokok)
+        console.log('Gaji bersih anda', gajiBersih)
+        
+
+        //2. waktu
+        let jam = 1
+        let menit = 30
+        let detik = 40
+
+        if (total = jam * 3600 + menit * 60 + detik ){
+            console.log('total detik', total)
+        }
+
+        //3 
+        let totalwaktu = 5440
+        let hour = Math.floor (totalwaktu / 3600)
+        let sisadetik = totalwaktu % 3600
+        let minute = Math.floor (sisadetik / 60)
+        let second = sisadetik % 60
+        
+        console.log(hour,':',minute,':',second)
+    </script>
+</body>
+</html>
